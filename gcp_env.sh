@@ -3,9 +3,8 @@
 # Variables
 REGION="us-west1"
 ZONE="us-west1-a"
-PROJECT_ID="minto-test-349211"
+PROJECT_ID="<add project id here>"
 
-#!/bin/bash
 
 REGION="$REGION"
 PROJECT_ID="$PROJECT_ID"
