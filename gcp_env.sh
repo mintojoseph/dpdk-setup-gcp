@@ -4,6 +4,9 @@
 REGION="us-west1"
 ZONE="us-west1-a"
 PROJECT_ID="<add project id here>"
+REGION="us-west1"
+ZONE="us-west1-a"
+PROJECT_ID="minto-test-349211"
 
 
 REGION="$REGION"
@@ -53,7 +56,7 @@ if ! gcloud compute instances describe vm1 &> /dev/null; then
     --network-interface=network=control-plane-vpc,subnet=control-plane-subnet,nic-type=GVNIC \
     --network-interface=network=data-plane-vpc,subnet=data-plane-subnet,nic-type=GVNIC \
     --zone=$ZONE \
-    --project=$PROJECT_ID #\
+    --project=$PROJECT_ID \
      --metadata-from-file=startup-script=startup.sh
 fi
 
@@ -66,7 +69,7 @@ if ! gcloud compute instances describe vm2 &> /dev/null; then
     --network-interface=network=control-plane-vpc,subnet=control-plane-subnet,nic-type=GVNIC \
     --network-interface=network=data-plane-vpc,subnet=data-plane-subnet,nic-type=GVNIC \
     --zone=$ZONE \
-    --project=$PROJECT_ID #\
+    --project=$PROJECT_ID \
      --metadata-from-file=startup-script=startup.sh
 fi
 
