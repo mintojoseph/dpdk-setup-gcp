@@ -4,13 +4,6 @@
 REGION="us-west1"
 ZONE="us-west1-a"
 PROJECT_ID="<add project id here>"
-REGION="us-west1"
-ZONE="us-west1-a"
-PROJECT_ID="minto-test-349211"
-
-
-REGION="$REGION"
-PROJECT_ID="$PROJECT_ID"
 
 # Data-plane VPC and subnet
 if ! gcloud compute networks describe data-plane-vpc &> /dev/null; then
@@ -70,7 +63,7 @@ if ! gcloud compute instances describe vm2 &> /dev/null; then
     --network-interface=network=data-plane-vpc,subnet=data-plane-subnet,nic-type=GVNIC \
     --zone=$ZONE \
     --project=$PROJECT_ID \
-     --metadata-from-file=startup-script=startup.sh
+    --metadata-from-file=startup-script=startup.sh
 fi
 
 # Create firewall rule for SSH access

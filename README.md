@@ -8,5 +8,5 @@ Update the values in the script as required.
 
 Create the environment
 ```
-$ sh gcp_env.sh 
+$ sh gcp_env_t1.sh 
 ```
