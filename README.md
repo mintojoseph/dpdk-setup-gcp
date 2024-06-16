@@ -1,8 +1,7 @@
 # dpdk-setup-gcp
-
+Setup DPDK in GCP
 
 Created as a test repo for the article [High Network Performance: Strategies for Google Cloud Platform](https://hoverture.com/blog/high-network-performance-strategies-for-google-cloud-platform/)
-
 
 Make sure that the user is authenticated
 ```
